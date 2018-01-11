@@ -1,0 +1,221 @@
+/*样式初始化*/
+
+body,
+div,
+h1,
+ul,
+ol,
+li,
+p,
+a,
+img,
+header,
+section,
+input,
+h2,
+h3,
+h4,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: #000;
+}
+
+input,
+button {
+    border: 0;
+    outline: 0;
+    /* 线条无颜色 */
+}
+
+img {
+    display: block;
+    /* 换成块元素 */
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    /* 去掉前面的小点（样式） */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 0.12rem;
+    font-weight: normal;
+    /*font-size字体大小  font-weight字体加粗 */
+}
+
+html {
+    font-size: 50px
+}
+/* 响应式布局 */
+@media screen and (min-width: 320px) {
+                   /* 最小宽度320 */
+/* 检测屏幕  */
+    html {
+        font-size: 42.67px
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 64px
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 85.33px
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px
+    }
+}
+/* css3 媒体查询 */
+/* rem相对单位，等比例放大缩小 */
+
+body {
+    font: 12px/1.5 "微软雅黑";
+    box-sizing: border-box;
+    background-color: #efeef4;
+
+}
+.mb30{
+    margin-bottom:0.3rem; 
+}
+.bor-b{
+    border-bottom: 0.01rem solid rgba(112, 110, 110, 0.829);
+}
+/* 组件 */
+/* 清除浮动 */
+.fix:after,
+.fix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both
+}
+.item {
+    
+    padding: 0 0.3rem;
+    border: 0.01rem solid rgba(240, 248, 255, 0.829);
+
+    
+    font-size: 0.32rem;
+    background-color: #fff;
+
+
+}
+.we-icon{
+     float: left;
+     /* 向左浮动 */
+    display: inline-block;
+
+    width: 0.44rem;
+
+    height: 0.44rem;
+
+    margin-top: 0.2rem;
+    margin-right: 0.35rem;
+
+    background: url(../img/img.png) no-repeat;
+
+    background-size: 400%;
+
+   
+    
+}
+.itme-list{
+    height: 0.88rem;
+    line-height: 0.88rem;
+}
+.we-icon2{
+    background-position: -0.4rem 0;
+}
+.we-icon3{
+    background-position: -0.9rem 0;
+}
+.we-icon6{
+    background-position: -1.36rem 0;
+}
+.we-icon7{
+    background-position: -0.4rem -0.48rem;
+}
+.we-icon8{
+    background-position: -0.9rem -0.48rem;
+}
+
+.we-icon9{
+    background-position:  0 -0.5rem;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+    border-top: 0.01rem solid rgba(240, 248, 255, 0.829);
+    background-color: aliceblue;
+    color: #000;
+   
+}
+.foot li{
+    float: left;
+    width: 25%;
+    text-align: center;
+
+
+}
+.foot div{
+    width: 100%;
+    height: 0.62rem;
+    padding-left: 0.67rem;
+}
+.foot p{
+    /* float: left; */
+    width: 100%;
+    font-size: 0.4rem;
+    line-height: 0.9rem;
+}
+    .foot .active {
+        color: #31ad37;
+
+}
+.footbook{
+    height: 2rem;
+}

@@ -1,0 +1,19 @@
+/* 步骤 */
+/* 位置 浮动 定位 */
+/* 状态 块 行内 行内快 */
+/* 里面元素 */
+/* 发现 */
+
+.head{
+    height: 0.9rem;
+
+    text-align: center;
+    /* 文字水平居中 */
+    line-height: 0.9rem;
+    font-size: 0.38rem;
+
+    color: aliceblue;
+    
+    background-color:#000000;
+ 
+}
