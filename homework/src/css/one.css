@@ -1,0 +1,234 @@
+
+/* .searth-box{
+	width: 50%;
+	height: 60px;
+	border-style:1px solid;
+	margin-top: 20px auto 0;
+
+}
+.zi{
+	color:#DCDCDC;
+}
+.z{
+	text-align: center;
+}
+ .table1{
+ 	background-color:#85dc38;
+    margin-top: 20px auto 0;
+   width:750px; 
+    height:150%;
+    clear:both;
+    margin-bottom: 10px;
+  }
+.table1 td{ 
+	height:50px; 
+	border-left:1px solid gainsboro; 
+	border-bottom:1px solid gainsboro;
+	} 
+.table2{
+ 	background-color:#f7713f;
+    margin-top: 20px auto 0;
+    width:750px; 
+    height:150%;
+    clear:both;
+    margin-bottom: 10px;
+  }
+.table2 td{ 
+	height:50px; 
+	border-left:1px solid gainsboro; 
+	border-bottom:1px solid gainsboro;
+	} 
+.table3{
+ 	background-color:#db386c;
+    margin-top: 20px auto 0;
+    width:750px; 
+    height:150%;
+    clear:both;
+    margin-bottom: 10px;
+  }
+.table3 td{ 
+	height:50px; 
+	border-left:1px solid gainsboro; 
+	border-bottom:1px solid gainsboro;
+	}
+.table4{
+ 	background-color:#2caa71;
+    margin-top: 20px auto 0;
+    width:750px; 
+    height:150%;
+    clear:both;
+    margin-bottom: 10px;
+  }
+.table4 td{ 
+	height:50px; 
+	border-left:1px solid gainsboro; 
+	border-bottom:1px solid gainsboro;
+	}   */
+/*样式初始化*/
+
+body,
+div,
+h1,
+ul,
+ol,
+li,
+p,
+a,
+img,
+header,
+section,
+input,
+h2,
+h3,
+h4,
+button {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	/* 去掉下划线 */
+	color: #000;
+}
+
+input,
+button {
+	border: 0;
+	outline: 0;
+	/* 线条无颜色 */
+}
+
+img {
+	display: block;
+	/* 换成块元素 */
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+	/* 去掉前面的小点（样式） */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 0.12rem;
+	font-weight: normal;
+	/*font-size字体大小  font-weight字体加粗 */
+}
+
+html {
+	font-size: 50px
+}
+
+
+/* 响应式布局 */
+
+@media screen and (min-width: 320px) {
+	/* 最小宽度320 */
+	/* 检测屏幕  */
+	html {
+		font-size: 42.67px
+	}
+}
+
+@media screen and (min-width: 360px) {
+	html {
+		font-size: 48px
+	}
+}
+
+@media screen and (min-width: 375px) {
+	html {
+		font-size: 50px
+	}
+}
+
+@media screen and (min-width: 414px) {
+	html {
+		font-size: 55.2px
+	}
+}
+
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 64px
+	}
+}
+
+@media screen and (min-width: 640px) {
+	html {
+		font-size: 85.33px
+	}
+}
+
+@media screen and (min-width: 750px) {
+	html {
+		font-size: 100px
+	}
+}
+
+
+/* css3 媒体查询 */
+
+
+/* rem相对单位，等比例放大缩小 */
+
+body {
+	font: 12px/1.5 "微软雅黑";
+	box-sizing: border-box;
+	/* background-color: #efeef4; */
+}
+
+.mb30 {
+	margin-bottom: 0.3rem;
+}
+
+.bor-b {
+	border-bottom: 0.01rem solid rgba(112, 110, 110, 0.829);
+}
+
+
+/* 组件 */
+.prc100{
+	width: 100%;
+}
+
+/* 清除浮动 */
+
+.fix:after,
+.fix:before {
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both
+}
+
+.bg1 {
+	background-color: green;
+}
+
+.bg2 {
+	background-color: #f7713f;
+}
+
+.bg3 {
+	background-color: #db386c;
+}
+
+.bg4 {
+	background-color: #2caa71;
+}
+.auto{
+	 margin-left: auto;
+	 margin-right: auto;
+}

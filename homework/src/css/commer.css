@@ -1,0 +1,227 @@
+/* 首页 */
+
+
+
+/* 轮廓 */
+
+/* 脱离文档留，内容多大，就撑开多大 */
+.swper {
+    position: relative;
+    /* 相对定位 */
+}
+
+.dot {
+    position: absolute;
+    /* 绝对定位 */
+    bottom: 0.15rem;
+    /* 小圆点向上移动0.15rem个距离 */
+    width: 100%;
+    /* 加一个长100%条 */
+    text-align: center;
+    /* 让小圆点居中 */
+}
+
+/* 搜索框 */
+.search {
+    position: absolute;
+    top: 0.56rem;
+    /* left: 1.05rem; */
+    left: 50%;
+    margin-left: -2.35rem;
+    /* 固定的页面居中 */
+    /* margin-left: 减少盒子的一半，就是不管页面大小，都在居中 */
+
+    /* 固定大小 */
+    width: 4.7rem;   
+    height:0.34rem;  
+    /* 盒子的长宽   5.4rem  0.6rem*/
+    
+
+    /* padding-left: 0.7rem;
+    名字离框的左距离 */
+
+    font-size: 0.24rem;
+    padding:0.11rem 0 0.15rem 0.7rem;
+
+    /* 不固定宽度 */
+    /* width：(原长/7.5)% */
+
+}
+
+.dot span{
+    /* span是内联不是块，变成块 */
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.15rem;
+    border-radius: 50%;
+        /* 指定圆形 */
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+    /* 小圆点之间的距离和向下距离 */
+
+    background-color: #fff;
+
+    border-radius: 0.5rem;
+    /* 变为圆角 */
+}
+.content{
+    overflow: hidden;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    
+    background-color: aliceblue;
+}
+.item-box {
+    height: 1.5rem;
+    margin-top: 0.18rem;
+    /* 指定盒子的大小 */
+}
+
+.item-box .list {
+    float: left;
+    border-right: 0.01rem solid floralwhite;
+    border-bottom: 0.01rem solid floralwhite;
+    box-sizing: border-box;
+    width: 33.33333%;
+    height: 0.75rem;
+    /* 盒子分为三份，高分为两份 */
+    /* background-color: #db386c; */
+    
+    font-size: 0.28rem;
+
+    text-align: center;
+    line-height: 0.75rem;
+    
+    color: aliceblue;
+}
+.item-box .big{
+   height: 1.5rem;
+}
+
+/* .bg1 .big{
+    background: url(../img/img/sc.png)center center no-repeat;
+    background-size: 25%;
+
+} */
+.bg1 .auto,
+.bg2 .auto ,
+.bg3 .auto ,
+.bg4 .auto {
+    width:0.75rem;
+    height:0.65rem;
+   
+}
+.title{
+    width: 100%;
+    height: 0.59rem;
+
+    padding-top: 0.4rem;
+
+    font-size: 0.24rem;
+    color: black;
+    /* background-color: darkorange; */
+   
+}
+.title img{
+    display: inline-block;
+     width: 0.37rem;
+     height: 0.37rem;
+     margin-right: 0.2rem;
+     vertical-align: middle;
+     /* 垂直居中 */
+     margin-top: -0.05rem;
+}
+.title a{
+    color: aqua;
+    padding-left: 0.1rem;
+    text-decoration: underline;
+}
+.menu {
+    float: left;
+    width: 47%;
+    box-sizing: border-box;
+
+}
+.fr{
+    float:right;
+}
+.item{
+    float: left;
+    width: 47%;
+    height: 1.73rem;
+    font-size: 0.28rem;
+
+    /* margin-right: 0.01rem;
+    margin-bottom: 0.02rem; */
+
+    border-right: 0.03rem solid #ffffff;
+    border-bottom: 0.02rem solid #ffffff;
+    
+    
+
+    text-align: center;
+    line-height: 1.73rem;
+
+    /* background-color: bisque; */
+  
+}
+.item:nth-of-type(2n){
+    border-right: 0;
+}
+.prc100{
+    width: 100%;
+
+}
+.pt20{
+    padding-top: 0.2rem;
+}
+.active-box{
+    width: 100%;
+    text-align: center;
+    height: 0.95rem;
+
+    /* line-height: 0.35rem; */
+    /* 垂直居中 */
+    background-color: #ffffff;
+    margin-top: 0.24rem;
+    margin-bottom: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+}
+.f40{
+    font-size: 0.24rem;
+}
+.f20{
+    font-size: 0.2rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.98rem;
+
+    background-color: #fff;
+}
+.footer li{
+
+    float: left;
+
+    width: 25%;
+    height: 0.78rem;
+    font-size: 0.18rem;
+    padding-top: 0.2rem;
+
+    text-align: center;
+}
+.footer img{
+    padding-bottom: 0.14rem;
+    width: 0.3rem;
+}
+.active{
+    color: red;
+}
+.dot .act{
+    width: 0.4rem;
+    /* 把圆形变为圆角矩形 */
+
+}
