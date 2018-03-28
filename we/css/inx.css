@@ -1,0 +1,26 @@
+.a2 {
+    
+    width: 1285px;
+    height: 353px;
+    background: rosybrown;
+}
+li{
+    float: left;
+    width: 300px;
+    height: 260px;
+    padding-right: 10.6px;
+    padding-left: 10.6px;  
+    
+
+}
+.tu{
+   
+    width: 300px;
+    height: 264px; 
+}
+p{
+   
+    color: #778899;
+    font-size: 26px;
+    margin: 20px 100px;
+}

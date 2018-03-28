@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js事件</title>
+</head>
+<style>
+    #time{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <button>按钮</button>
+    <input type="text" value="请输入内容">
+
+    <div id="time">
+        <span></span>
+        :
+        <span></span>
+        :
+        <span></span>
+        :
+        <span></span>
+        :
+        <span></span>
+        :
+        <span></span>
+        :
+        <span></span>
+      
+    </div>
+
+    <ul id="test">
+        <li>JavaScript</li>
+        <li>java</li>
+        <li>HTML</li>
+    </ul>
+    
+</body>
+
+<script>
+    var btn=document.querySelector("button");
+    btn.onclick=function(){
+        btn.id="btn";
+        btn.className="tool";
+
+        btn.innerHTML="我是一个按钮";
+
+        btn.sytle.backgroundColor="red";
+        btn.style.color="#666";
+        btn.style.fontSize="14px";
+
+        btn.setAttribute("flag","turn");  //获取
+
+        console.log(btn.getAttribute("flag"));//移除
+        btn.removeAttribute("flag");
+        btn.removeAttribute("style");
+    }
+
+        setTimeout(function(){
+        btn.style="";
+        },2000);
+        setTimeout(function () {
+                btn.removeAttribute("style");
+        }, 4000);
+
+
+        //onfocus
+
+        var input=document.querySelector("input");
+        input.onfocus=function(){
+            input.value="";
+        }
+        input.onblur=function(){
+            if(!input.value){
+                input.value="请输入内容";
+            }
+        }
+
+        //
+        input.onchange=function(){
+            console.log(input.value);
+        }
+        // //输出最后一个之前的全部
+        // input.onkeydown = function () {
+        //     console.log(input.value);
+        // }
+        // //输出全部
+        // input.onkeyup = function () {
+        //     console.log(input.value);
+        // }
+
+
+       // var date= new Date();
+    //    console.log("tody");
+       // console.log(""+date.getTime());
+         // getTime() ：返回实例距离1970年1月1日00: 00: 00的毫秒数，等同于valueOf方法。
+      //  console.log(""+date.getDate());
+          //     getDate() ：返回实例对象对应每个月的几号（从1开始）。
+     //   console.log("getFullYear"+date.getFullYear());
+         //     getFullYear() ：返回四位的年份。
+      //  console.log("getMilliseconds"+date.getMilliseconds());
+         //     getMilliseconds() ：返回毫秒（0 - 999）。
+       // console.log(""+date.getHours());
+        //     getHours() ：返回小时（0 - 23）。
+       // console.log(""+date.getMonth());
+        //getMonth() ：返回月份（0表示1月，11表示12月）
+      //  console.log(""+date.getSeconds());
+         //     getSeconds() ：返回秒（0 - 59）。
+
+
+
+        //     getTime() ：返回实例距离1970年1月1日00: 00: 00的毫秒数，等同于valueOf方法。
+        //     getDate() ：返回实例对象对应每个月的几号（从1开始）。
+        //     getDay() ：返回星期几，星期日为0，星期一为1，以此类推。
+        //     getYear() ：返回距离1900的年数。
+        //     getFullYear() ：返回四位的年份。
+        //     getMonth() ：返回月份（0表示1月，11表示12月）。
+        //     getHours() ：返回小时（0 - 23）。
+        //     getMilliseconds() ：返回毫秒（0 - 999）。
+        //     getMinutes() ：返回分钟（0 - 59）。
+        //     getSeconds() ：返回秒（0 - 59）。
+        //     getTimezoneOffset() ：返回当前时间与 UTC 的时区差异，以分钟表示，返回结果考虑到了夏令时因素。                        
+
+
+
+
+        var  time=document.querySelector("#time");
+        var spans=time.querySelectorAll("span");
+        getTime();
+        setInterval(getTime,1000);
+
+        function getTime(){
+            //setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+
+           var date=new Date();
+
+           var year=date.getFullYear();
+           var month=date.getMonth();
+           var days=date.getDate();
+           var week=date.getDay();
+
+           var hours=date.getHours();
+           var minutes=date.getMinutes();
+           var seconds=date.getSeconds();
+
+            spans[0].innerText = year+"年";
+            spans[1].innerText = month;
+            spans[2].innerText = days;
+            spans[3].innerText = "星期"+week;
+
+            spans[4].innerText=hours;
+
+           if(minutes>9){
+               spans[5].innerText = minutes;
+           }else{
+               spans[5].innerText="0"+ minutes;
+           }
+           if(seconds>9){
+                spans[6].innerText = seconds;
+           }else{
+               spans[6].innerText = "0"+seconds;
+           }
+           
+
+       }
+
+
+    Math.ceil();//向上
+    Math.floor();//向下
+
+
+    // location.href="http://www.baidu.com";
+    // console.href="http://jd.com";
+
+     var t = document.getElementById("test");
+     var newcode = document.createElement("li"),
+          newc=document.createElement("li");
+          newcode.innerHTML = "PHP";
+          newc.innerHTML = "jqueay";
+          t.appendChild(newcode);
+          t.appendChild(newc);
+
+    
+    
+
+
+</script>
+</html>

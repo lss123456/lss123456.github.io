@@ -1,0 +1,53 @@
+
+.con{
+    width: 1275px;
+    height: 588px;
+    background: #b0e0e6;
+}
+.cons{
+    width:1275px; 
+    height:51px;
+    background: #778899;
+    
+}
+.p1{
+    font-size: 30px;
+    color: rgb(14, 41, 41);
+    text-align: center;
+    padding-top: 35px;
+}
+p{
+    font-size: 30px;
+    color: rgb(14, 41, 41);
+    text-align: center;
+}
+.cond{
+    width: 401px;
+    height: 402px;
+    background: #ffa500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.cond{
+   text-align: center;
+
+}
+.pp1{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+}
+.pp{
+    font-size: 20px;
+}
+button{
+    margin-top: 16px;
+    padding: 7px;
+    border: 1px solid #666;
+}
+input{
+    width: 
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            background: rgb(230, 152, 152);
+        }
+  .width{
+       width: 100px;
+  }
+
+
+
+    </style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline'">
+</head>
+<body>
+    <div class="width"  id="width">
+        第一个盒子
+    </div>
+     <p>
+        <label for="w">width</label><input type="text" id="w"  value="宽度">
+    </p>
+    <p>
+        <label for="c">color</label><input type="text" id="c"  class="input">
+    </p>
+
+    <button>确定</button>
+    
+
+    <script>
+        //交互    dom   ECMA  BOM  DOM
+
+        //1.获取对象
+        var objo=document.getElementById("width");
+                  //文档          id=""               对象是唯一的
+
+        var inputWidth=document.querySelector("input");//对象是唯一的   
+       // var inputWidth=document.querySelection(".input");//   取第一个
+                                //查找     标签
+
+
+        // var button1=document.querySelectorAll("button");
+        // var button1=document.querySelectorAll("#button");
+        // var button1=document.querySelectorAll(".button");
+        // var button1=document.querySelectorAll("[button]");
+
+        var inputColor=document.getElementsByClassName("input")//类数组
+                                //元素      class=""
+
+        var button=document.getElementsByTagName("button")[0];  //类数组
+         
+        
+        //
+        // var button2=document.getElementById("c");
+        // var button3=document.querySelector(".input");
+        // var button4=document.querySelector("#c");
+        // var button5=document.getElementsByClassName("input")[0];
+        // var button6=document.querySelectorAll("#c");
+        // var button7=document.querySelectorAll("input")[1];
+        // var button8=document.querySelectorAll("#c")[0];
+
+       //2.改变对应的值
+       objo.style.width="200px";
+       objo.style.height="200px";
+       objo.style.backgroundColor="#eee";
+       objo.style.color="red";
+       objo.style.fontSize="20px";
+
+   
+
+       button.onclick=function(){
+           //点击
+//取值
+           var wVal=inputWidth.value;
+//赋值
+        //    inputWidth.value = "123";
+
+           var cVal=inputColor[0].value;
+           objo.style.width=wVal;
+           objo.style.color=cVal;
+       }
+  
+
+
+
+    </script>
+</body>
+</html>
